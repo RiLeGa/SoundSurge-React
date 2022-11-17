@@ -44,7 +44,7 @@ const Header = () => {
                 <input type="checkbox" name="perfil" id="perfil"/>   
                 
                     <input type="checkbox" name="perfil" id="perfil"/>
-                    <label class="perfilU" for="perfil"><img class="usuario"  src="/images/users/<%= locals.userLogin.imagen %>" alt="" /><h2>Hola!</h2>
+                    <label class="perfilU" for="perfil"><img class="usuario"  /><h2>Hola!</h2>
                     </label>
             
                     <input type="checkbox" name="perfil" id="perfil"/>
