@@ -1,7 +1,6 @@
 footer{
     background-color: black;
     background-size: cover;
-    margin-top: -3px;
 }
 
 footer .logo-footer{
@@ -64,6 +63,7 @@ footer .Redes-sociales ul{
 }
 footer .info ul li{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 footer .Redes-sociales ul li a{
@@ -74,7 +74,14 @@ footer .Redes-sociales ul li a{
 
 
 @media (min-width: 461px){
-    
+    footer .ubicacion .mapa{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        justify-content: space-around;
+        display: block;
+    }
 }
 
 @media (min-width: 1055px){
@@ -112,5 +119,52 @@ footer .Redes-sociales ul li a{
     footer .info ul:nth-last-child(1){
         margin-left: 33rem;
     }
+
+    footer .Redes-sociales{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    footer .Redes-sociales ul{
+        font-family: var(--fuenteGral);
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+    footer .info ul li{
+        text-align: center;
+    }
+    
+    footer .Redes-sociales ul li a{
+        font-size: 45px;
+        transition: .5s;
+    }
+    
+    footer .Redes-sociales ul li a::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgb(149, 38, 161);
+        transition: .5s;
+        transform: scale(.9);
+      }
+      
+      footer .Redes-sociales ul li a:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #10b7ff;
+      }
+      
+      footer .Redes-sociales ul li a:hover {
+        color: rgb(149, 38, 161);/* 
+        box-shadow: 0 0 5px #10ddff; */
+        text-shadow: 0 0 10px #10d7ff;
+      }
+    
+    
+      
 
 }

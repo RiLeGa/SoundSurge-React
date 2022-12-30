@@ -1,5 +1,11 @@
 header{
+    background-color: black;
+    width:  100%;
+    height: 100px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .navegacion {
@@ -17,6 +23,10 @@ header .navegacion .logo{
     justify-content: center;
     display: flex;
     margin-left: 20px;
+    width: 110px;
+}
+header .navegacion .logo .gorrito{
+    display: none;
 }
 header .navegacion label.burguer i{
     width: 2vw;
@@ -30,28 +40,66 @@ header .navegacion input{
 }
 header .navegacion input:checked ~ nav.opcionesDePerfil-Movil {
     display: block;
-    z-index: 1;
+    z-index: 3;
 }
-header .navegacion .busqueda{
+
+header .navegacion .busqueda .form-search{
     display: flex;
-    padding: 0 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
 }
+
+header .navegacion .busqueda {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100vw;
+    margin-top: 30px;
+    padding-left: 10vw;
+}
+
 header .navegacion .busqueda input{
-    display: none;
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    width: 70vw;
+    height: 20px;
+    border: none;
+    border-radius: 15px;
+}
+header .navegacion .busqueda button{
+    background: none;
+    border: none;
+}
+
+
+header .navegacion .busqueda i.fas.fa-search{
+    display: flex;
+    color: #8d1888;
+    font-size: 20px;
+    margin: 3px 10px 0 5px;
+    padding: 0 5px;
 }
 header .navegacion nav.opcionesDePerfil-Movil{
     display: none;
     align-items: center;
     margin-top: 60px;
     position: absolute;
+    left: 0;
 }
 
 header .navegacion nav.opcionesDePerfil-Movil ul{
+    position: absolute;
     display: flex;
     background-color: #8d1888;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100vw;
+    top: 40px;
     height: 55vh;
 }
 header .navegacion nav.opcionesDePerfil-Movil ul li{
@@ -78,21 +126,8 @@ header .navegacion nav.opcionesDePerfil-Movil button.logout{
     padding: 15px 12px;
     border: none;
 }
-header .navegacion .busqueda button{
-    background: none;
-    border: none;
-}
 
-header .navegacion .busqueda i.fas.fa-search{
-    display: block;
-    color: #8d1888;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 0 5px;
-    margin-left: 100px;
-}
-
-header .navegacion .carrito i.fas.fa-shopping-cart{
+header .navegacion .carrito1 i.fas.fa-shopping-cart{
     color: #ffffff;
     font-size: 20px;
     margin-top: 20px;
@@ -107,7 +142,7 @@ header .navegacion label.perfil{
 header .navegacion nav.opcionesDePerfil{
     display: none;
 }
-header .navegacion .opcionesDeProductos{
+header .opcionesDeProductos{
     display: none;
 }
 header .navegacion div.usuario{
@@ -118,12 +153,36 @@ header .navegacion div.usuario{
 /*Tablet*/
 
 @media (min-width: 461px){
-    header section{
+    header{
         background-color: black;
+        width:  100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .navegacion {
+        background-color: rgb(0, 0, 0);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         width:  100%;
         height: 60px;
         display: flex;
         justify-content: space-around;
+    }
+    header section{
+        width:  100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navegacion label.burguer{
+        position: absolute;
+        z-index: 3;
+        left: 0px;
     }
     header .navegacion label.burguer i{
         width: 2vw;
@@ -136,6 +195,10 @@ header .navegacion div.usuario{
     header .navegacion .logo{
         display: flex;
         justify-content: center;
+        width: 100px;
+    }
+    header .navegacion .logo .gorrito{
+        display: none;
     }
 
     header .navegacion img{
@@ -143,30 +206,63 @@ header .navegacion div.usuario{
         width: 100px;
         padding-right: 3px;
     }
-    header .navegacion .busqueda {
+
+    header .navegacion .busqueda .form-search{
         display: flex;
-        margin-top: 4px;
-        margin-right: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
     }
+
+    header .navegacion .busqueda {
+        position: absolute;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        width: 100vw;
+        margin-top: 30px;
+        padding-left: 10vw;
+    }
+    header .navegacion .busqueda .form-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
 
     header .navegacion .busqueda input{
         display: flex;
         font-size: 15px;
         text-align: center;
-        width: 30vw;
+        width: 70vw;
         height: 20px;
-        margin-top: 18px;
+        border: none;
+        border-radius: 15px;
+    }
+    header .navegacion .busqueda button{
+        background: none;
         border: none;
     }
+    
+    
     header .navegacion .busqueda i.fas.fa-search{
         display: flex;
         color: #8d1888;
         font-size: 20px;
-        margin: 18px 10px 0 5px;
+        margin: 3px 10px 0 5px;
         padding: 0 5px;
     }
 
-    header .navegacion .carrito i.fas.fa-shopping-cart{
+    header .navegacion .carrito1{
+        position: absolute;
+        right: 9px;
+        top: 10px;
+    }
+
+    header .navegacion .carrito1 i.fas.fa-shopping-cart{
         color: #ffffff;
         font-size: 20px;
         margin-top: 20px;
@@ -177,20 +273,46 @@ header .navegacion div.usuario{
     }
 }
 
+
 /*Desktop*/
-@media (min-width: 795px) {
+@media (min-width: 870px) {
     header{
         background-color: black;
+        width:  100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .navegacion {
+        background-color: rgb(0, 0, 0);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         width:  100%;
         height: 60px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
+    header .navegacion .logo{
+        display: flex;
+        justify-content: center;
+        width: 9vw;
+        margin-top: 40px;
+    }
+
+    header .navegacion .logo .gorrito{
+        display: block;
+        position: absolute;
+        width: 90px;
+        top: 0;
+        left: 8px;
+    }
     header section{
         background-color: black;
-        width:  30%;
+        width:  50%;
         height: 60px;
         display: flex;
         justify-content: space-around;
@@ -213,16 +335,113 @@ header .navegacion div.usuario{
         margin-top: 0;
         position: inherit;
     }
+    header .navegacion .busqueda {
+        display: flex;
+        position: unset;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 64vw;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    header .navegacion .busqueda .form-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: -20px;
+    }
+    header .navegacion .busqueda input{
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        width: 58vw;
+        height: 30px;
+        border-radius: 15px;
+        margin-top: 5px;
+        border: none;
+    }
+
+    /* .opcionesDeCat{
+        display: flex;
+        width: 14%;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        left: 18vw;
+        top: 6em;
+        z-index: 1;
+    } */
+    
 
     header .navegacion nav.opcionesDePerfil{
         display: none;
     }
-    header .navegacion .opcionesDeProductos{
+    header .opcionesDeProductos{
         display: flex;
-        flex: auto;
+        width: 60vw;
+        height: 25px;
+        margin-bottom: 5px;
         justify-content: space-around;
-        align-items: self-end;
+        align-items: center;
     }
+
+
+    header .opcionesDeProductos a{
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        margin: 10px 0;
+        padding: 7px 8px;
+        text-decoration: none;
+        color: #f8f4f4;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    
+    header .opcionesDeProductos a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 29px;
+        border-top: 2px solid #8d1888;
+        border-bottom: 2px solid #8d1888;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: 0.3s;
+        border-radius: 10px;
+      }
+    header .opcionesDeProductos a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        background-color: #8d1888;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+        border-radius: 10px;
+      }
+    header .opcionesDeProductos a:hover {
+        color: #fff;
+    }
+    header .opcionesDeProductos a:hover:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+    header .opcionesDeProductos a:hover:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
 
     header .navegacion nav ul{
         display: flex;
@@ -252,7 +471,13 @@ header .navegacion div.usuario{
          display: none;
     }
 
-    header .navegacion .carrito i.fas.fa-shopping-cart{
+    header .navegacion .carrito1{
+        position: absolute;
+        right: 100px;
+        top: 20px;
+    }
+
+    header .navegacion .carrito1 i.fas.fa-shopping-cart{
         color: #ffffff;
         font-size: 20px;
         margin-top: 7px;
@@ -279,16 +504,17 @@ header .navegacion div.usuario{
     header .navegacion label.perfilU{
         position: relative;
         display: inline-block;
-        padding: 15px 7px 0 10px;
+        padding: 5px 0px 5px 0px;
         transition: 0.2s;
         border-radius: 10%;
-        top: 4;
+        top: 18px;
     }
     header .navegacion label.sinLog{
         display: block;
         color: #fbfbfb;
-        padding: 15px 7px 8px 10px;
+        padding: 17px 9px 8px 11px;
         border-radius: 10%;
+        margin-top: 40px;
     }
 
     header .navegacion label.sinLog h2{
@@ -299,16 +525,18 @@ header .navegacion div.usuario{
     header .navegacion nav.opcionesDePerfil button.logout:hover,
     header .navegacion label.sinLog:hover,
     header .navegacion label.perfil:hover,
-    header .navegacion .btn-neon:hover{
+    header .navegacion .btn-neon:hover,
+    header .opcionesDeProductos .btn-neon:hover{
         background: #8d1888;
+        border-radius: 10px;
     }
 
     /*usuario*/
 
     header .navegacion div.usuario{
         display: block;
-        display: block;
-        width: 130px;
+        width: 75px;
+        margin-right: 20px;
     }
 
     header .navegacion label.perfil i.fas .fa-user-circle{
@@ -334,10 +562,48 @@ header .navegacion div.usuario{
     header .navegacion input#perfil{
         display: none;
     }
+
+    header .opcionesDeProductos ul.opcionesDeCat{
+        display: none;
+    }
+    header .opcionesDeProductos ul.opcionesDeMarc{
+        display: none;
+    }
+
+    header .opcionesDeProductos input#categorias{
+        display: none;
+    }
+
+    header .opcionesDeProductos input#categorias:checked ~ .opcionesDeCat {
+        display: flex;
+        width: 14%;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        left: 18vw;
+        top: 6.2em;
+        z-index: 1;
+    }
+    header .opcionesDeProductos input#marcas{
+        display: none;
+    }
+
+    header .opcionesDeProductos input#marcas:checked ~ .opcionesDeMarc {
+        display: flex;
+        width: 13%;
+        flex-direction: column;
+        position: absolute;
+        background: black;
+        left: 29.7vw;
+        top: 6.2em;
+        z-index: 1;
+    }
+
     header .navegacion input#perfil:checked ~ nav.opcionesDePerfil {
         display: flex;
         position: absolute;
-        z-index: 1;
+        top: 100px;
+        z-index: 3;
     }
 
     header .navegacion nav.opcionesDePerfil{
