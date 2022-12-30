@@ -5,10 +5,10 @@ import logo from '../assets/logo.png'
 const Footer =() =>{
   return (
     <footer>
-    <div class="logo-footer">
-        <a class="logo" href="/"><img src={logo} alt='' /></a>
+    <div className="logo-footer">
+        <a className="logo" href="/"><img src={logo} alt='' /></a>
     </div>
-    <section class="info">
+    <section className="info">
         <ul>
             <h2>SOBRE NOSOTROS</h2>
             <li><a href="/aboutUs">About <br/> SoundSurge</a></li>
@@ -20,18 +20,18 @@ const Footer =() =>{
             <li><a id="ubi2" >Sucursal <br/> San Miguel</a></li>
         </ul>
     </section>
-    <section class="ubicacion">
-        <div id="mapa" class="mapa">
+    <section className="ubicacion">
+        <div id="mapa" className="mapa">
         </div>
     </section>
         <h2>REDES</h2>
-    <section class="Redes-sociales">
+    <section className="Redes-sociales">
         <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fas fa-at" ></i></a></li>
+            <li><a href="#"><i className="fa-brands fa-facebook-square"></i></a></li>
+            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i className="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i className="fas fa-at" ></i></a></li>
         </ul>
     </section>
 </footer>
