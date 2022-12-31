@@ -378,22 +378,10 @@
     }
 
 
-    .home main .contenedor ul article div.producto{
-        background-color: rgb(255, 255, 255);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: 45px;
-        background-size: 65%;
-        display: block;
-        text-align: center;
-        width: 18vw;
-        height: 325px;
-        margin-left: 50px;
-        margin-bottom: 35px;
-        transition: 0.5s;
-        box-shadow: 0 0 15px rgb(0 0 0 / 95%);
+    .home main .contenedor article a{
+        width: 100%;
     }
-
+    
     /* .home main .precio{
         margin-top: 170px;
     } */
