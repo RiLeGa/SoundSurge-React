@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Article({id,imgProd,titulo,precio}) {
-    console.log(imgProd);
+function Article({id,titulo,precio}) {/* 
+    console.log(imgProd); */
       return (
         <article>
             <a href={`/detalle/${id}`}>
                 <div className="producto">
-                <div style={{ backgroundImage: `url(../assets/${imgProd})` }}>
+                <div /* style={{ backgroundImage: `url(../assets/${imgProd})` }} */>
                 {/* <img src={`../assets/${imgProd}`} alt="" /> */}
                   <div className="precio-1">
                       <h3>{titulo}</h3>
@@ -21,14 +21,14 @@ function Article({id,imgProd,titulo,precio}) {
     }
 
 Article.propTypes = {
-    id: PropTypes.number,
-    imgProd: PropTypes.string,
+    id: PropTypes.number,/* 
+    imgProd: PropTypes.string, */
     titulo: PropTypes.string,
     precio: PropTypes.string
 }
 Article.defaultProps  = {
-    id: 0,
-    imgProd: "default-image.png",
+    id: 0,/* 
+    imgProd: "default-image.png", */
     titulo: "Lorem ipsum dolor sit",
     precio: "$"
 }

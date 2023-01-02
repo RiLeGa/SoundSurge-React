@@ -1,126 +1,70 @@
-import React from 'react'
-import Article from './Article'
+import React, { useState, useEffect } from 'react'
 
-const Main =()=> {
+const Main = () => {
 
-    let productos = [
-        {
-            id : 1,
-            imgProd : "ampli-marshal25-1.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 2,
-            imgProd : "ampli-marshal25-2.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 3,
-            imgProd : "ampli-marshal25-3.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 4,
-            imgProd : "ampli-marshal25-3.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 5,
-            imgProd : "ampli-marshal25-1.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 6,
-            imgProd : "ampli-marshal25-2.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 7,
-            imgProd : "ampli-marshal25-3.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        },
-        {
-            id : 8,
-            imgProd : "ampli-marshal25-3.jpg",
-            titulo : "Lorem ipsum dolor sit amet",
-            precio : "150000"
-        }
-]
+    const url = "http://localhost:4000/api/productos"
+    const [todos, setTodos] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        const responseJSON = await response.json()
+        setTodos(responseJSON)
+        console.log(responseJSON);
+    }
+    useEffect(() => {
+        fetchApi()
+    }, [])
 
-
-
-  return (
-    <main>
+    return (
+        <main>
             <div className="categorias-home">
                 <h3 className="secciones"> Novedades </h3>
             </div>
             <section className='contenedor'>
-            {productos.map((producto, index) => {
-                return(
-                <Article
-                    key={index}
-                    id={producto.id}
-                    imgProd={producto.imgProd}
-                    titulo={producto.titulo}
-                    precio={producto.precio}
-                />
-                )
-            })}
-            </section>
+           
+                {!todos ? 'Cargando...' :
+                todos.data.map((todo, index) => {
+                    return (
+                        
+                        <article>
+                            <a href={`/detalle/${todo.id}`}>
+                                <div className="producto">
+                                    <div style={{ backgroundImage: `url(../assets/${todo.imagenes})` }}>
+                                        <div className="precio-1">
+                                            <h3>{todo.titulo}</h3>
+                                            <span >{todo.precio}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                       
+
+                    )
+                })}
             
+            </section>
+
             <div className="categorias-home">
                 <h3 className="secciones"> Ofertas </h3>
             </div>
-            <section className='contenedor'>
-            {productos.map(producto => {
-                return(
-                <Article
-                    key={producto.id}
-                    id={producto.id}
-                    imgProd={producto.imgProd}
-                    titulo={producto.titulo}
-                    precio={producto.precio}
-                />
-                )
-            })}
-            </section>
 
-            
+
+
 
             <div className="categorias-home">
                 <h3 className="secciones"> Surge Selection </h3>
             </div>
-            <section className='contenedor'>
-            {productos.map(producto => {
-                return(
-                <Article
-                    key={producto.id}
-                    id={producto.id}
-                    imgProd={producto.imgProd}
-                    titulo={producto.titulo}
-                    precio={producto.precio}
-                />
-                )
-            })}
+
+            <section className="spots">
+                <div className="video-1">
+                    <iframe className="spot-1" src="https://www.youtube.com/embed/qfGggAGITwg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+                <div className="video-2">
+                    <iframe className="spot-2" src="https://www.youtube.com/embed/Mi2iIqzdSD4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
             </section>
-                
-         <section className="spots">
-            <div className="video-1">
-                <iframe className="spot-1" src="https://www.youtube.com/embed/qfGggAGITwg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-            <div className="video-2">
-                <iframe className="spot-2" src="https://www.youtube.com/embed/Mi2iIqzdSD4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </div>
-        </section> 
-    </main>
-  )
+        </main>
+    )
 }
 
 export default Main
