@@ -10,7 +10,7 @@ function AboutUs() {
                      </p>
                 
                 <div className="card-lean">
-                    <video muted autoPlay ><source src="../assets/videos/PresentacionLean.mp4" type="video/mp4"/></video>
+                    <video muted autoPlay ><source src="../images/videos/PresentacionLean.mp4" type="video/mp4"/></video>
                     <h2>About Leandro</h2>
                     <p>
                         Leadro Rios <br/>
@@ -21,7 +21,7 @@ function AboutUs() {
                 </div>
 
                 <div className="card-lucas">
-                    <video muted autoPlay ><source src="../assets/videos/PresentacionLucas.mp4" type="video/mp4"/></video>
+                    <video muted autoPlay ><source src="../images/videos/PresentacionLucas.mp4" type="video/mp4"/></video>
                     <h2>About Lucas</h2>
                     <p>
                         Nombr/e: Lucas Cordoba <br/>

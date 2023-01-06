@@ -1,5 +1,5 @@
 .home{
-    background-image: url(../assets/FondoMovil.jpg);
+    background-image: url(/public/images/FondoMovil.jpg);
     background-color: #221d1da8;
     background-attachment: fixed;
     background-size: cover;
@@ -75,8 +75,8 @@
 .home main .contenedor ul article div.producto{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: end;
+    text-align: center;/* 
+    justify-content: end; */
     width: 40vw;
     height: 212px;
     margin-bottom: 25px;
@@ -289,7 +289,7 @@
 
 @media (min-width: 791px){
     .home{
-        background-image: url(../assets/FondoRecital.jpg);
+        background-image: url(/public/images/FondoRecital.jpg);
         background-color: white;
         background-attachment: scroll;
         background-size: cover;
@@ -339,13 +339,17 @@
         border-radius: 5px;
     }
     .home main .contenedor article .producto{
+        background-position: center;
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         text-align: center;
         width: 100%;
-        height: 350px;
+        height: 250px;
     }
 
     .home main img.gorrito{
@@ -396,6 +400,13 @@
         text-align: center;
         color: white;
         margin-top: 35px; 
+    }
+    .home main .precio-1 span{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     
     .home main span{

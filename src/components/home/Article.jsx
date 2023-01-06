@@ -1,36 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useSearchParams } from 'react-router-dom'
 
-function Article({id,titulo,precio}) {/* 
-    console.log(imgProd); */
+import { NavLink } from 'react-router-dom'
+
+
+function Article({id, titulo, imagenes, precio}) {
+  const [Params, setParams] = useSearchParams()
+
+  const img = `url('/images/${imagenes}')`
+  console.log(img)
+
       return (
         <article>
-            <a href={`/detalle/${id}`}>
-                <div className="producto">
-                <div /* style={{ backgroundImage: `url(../assets/${imgProd})` }} */>
+            <NavLink to="/DetallesDeProducto/:id">
+                {/* <div > */}
+                <div className="producto" style={{ backgroundImage: img}}></div>
                 {/* <img src={`../assets/${imgProd}`} alt="" /> */}
                   <div className="precio-1">
                       <h3>{titulo}</h3>
                       <span >{precio}</span>
                   </div>
-                  </div>
-                </div>
-            </a>
+                {/* </div> */}
+            </NavLink>
     </article>
       )
     }
 
 Article.propTypes = {
-    id: PropTypes.number,/* 
-    imgProd: PropTypes.string, */
+    id: PropTypes.number,
+    imagenes: PropTypes.string,
     titulo: PropTypes.string,
-    precio: PropTypes.string
+    precio: PropTypes.number
 }
 Article.defaultProps  = {
-    id: 0,/* 
-    imgProd: "default-image.png", */
+    id: 0,
+    imagenes: "default-image.png",
     titulo: "Lorem ipsum dolor sit",
-    precio: "$"
+    precio: 0
 }
 
 export default Article

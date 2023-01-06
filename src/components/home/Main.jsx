@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react'
+import Article from './Article'
 
 const Main = () => {
 
     const url = "http://localhost:4000/api/productos"
-    const [todos, setTodos] = useState()
+    const [Productos, setProductos] = useState()
+    
     const fetchApi = async () => {
         const response = await fetch(url)
         const responseJSON = await response.json()
-        setTodos(responseJSON)
+        setProductos(responseJSON)
         console.log(responseJSON);
     }
+    
     useEffect(() => {
         fetchApi()
     }, [])
@@ -21,32 +24,51 @@ const Main = () => {
             </div>
             <section className='contenedor'>
            
-                {!todos ? 'Cargando...' :
-                todos.data.map((todo, index) => {
+                { !Productos ? 'Cargando...' :
+                Productos.data.map( (producto => {
+                    
                     return (
-                        
-                        <article>
-                            <a href={`/detalle/${todo.id}`}>
-                                <div className="producto">
-                                    <div style={{ backgroundImage: `url(../assets/${todo.imagenes})` }}>
-                                        <div className="precio-1">
-                                            <h3>{todo.titulo}</h3>
-                                            <span >{todo.precio}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                       
-
+                       producto.id < 9 ?
+                        <Article
+                        key={producto.id}
+                        id={producto.id}
+                        titulo={producto.titulo}
+                        imagenes={producto.imagenes[0].nombre}
+                        precio={producto.precio}
+                         />
+                         :
+                         null
                     )
-                })}
+                    
+                }))}
             
             </section>
+            
 
             <div className="categorias-home">
                 <h3 className="secciones"> Ofertas </h3>
             </div>
+            <section className='contenedor'>
+           
+           { !Productos ? 'Cargando...' :
+           Productos.data.map( (producto => {
+               
+               return (
+                  producto.id > 9 && producto.id < 18 ?
+                   <Article
+                   key={producto.id}
+                   id={producto.id}
+                   titulo={producto.titulo}
+                   imagenes={producto.imagenes[0].nombre}
+                   precio={producto.precio}
+                    />
+                    :
+                    null
+               )
+               
+           }))}
+       
+       </section>
 
 
 
@@ -54,6 +76,27 @@ const Main = () => {
             <div className="categorias-home">
                 <h3 className="secciones"> Surge Selection </h3>
             </div>
+            <section className='contenedor'>
+           
+           { !Productos ? 'Cargando...' :
+           Productos.data.map( (producto => {
+               
+               return (
+                  producto.id > 18 && producto.id < 27  ?
+                   <Article
+                   key={producto.id}
+                   id={producto.id}
+                   titulo={producto.titulo}
+                   imagenes={producto.imagenes[0].nombre}
+                   precio={producto.precio}
+                    />
+                    :
+                    null
+               )
+               
+           }))}
+       
+       </section>
 
             <section className="spots">
                 <div className="video-1">

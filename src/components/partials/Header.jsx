@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import logo from '../../assets/logo.png'
 
 const Header = () => {
@@ -9,17 +11,18 @@ const Header = () => {
         <label className="burguer" htmlFor="burguer"><i className="fas fa-bars"></i></label>
         <nav className="opcionesDePerfil-Movil">
             <ul>
+
+            
                 
-                    <li><a className="btn-neon" href="/users/perfil">Perfil</a></li>
-                    
-                        <li><a className="btn-neon" href="/admin/lista">Admin</a></li>
+                    <li><NavLink className="btn-neon" to="/">Perfil</NavLink></li>
+                    <li><NavLink className="btn-neon" to="/">Admin</NavLink></li>
                     
                
-                    <li><a className="btn-neon" href="/users/login">login</a></li>
-                    <li><a className="btn-neon" href="/users/register">Register</a></li> 
+                    <li><NavLink className="btn-neon" to="/">login</NavLink></li>
+                    <li><NavLink className="btn-neon" to="/">Register</NavLink></li> 
                 
-                <li><a className="btn-neon" href="/productos/todos">Todos los productos</a></li>
-                <li><a className="btn-neon" href="/productos/loMasVendido">Lo + Vendido</a></li>
+                <li><NavLink className="btn-neon" to="/">Todos los productos</NavLink></li>
+                <li><NavLink className="btn-neon" to="/">Lo + Vendido</NavLink></li>
                 
                     <form className="exit" action="/users/logout?_method=DELETE" method="post">
                         <button className="logout" type="submit">Cerrar Sesion</button> 
@@ -27,7 +30,7 @@ const Header = () => {
                 
             </ul>
         </nav>
-        <a className="logo" href="/"><img src={logo} alt='' /></a>
+        <NavLink className="logo" to="/"><img src={logo} alt='' /></NavLink>
 
         <section className="busqueda">
             <div>
@@ -40,7 +43,7 @@ const Header = () => {
             
         
             <div className="carrito1">
-                <a href="/productos/carrito" target="_blank" className="btn-neon"><i className="fas fa-shopping-cart"></i></a>
+                <NavLink to="/" target="_blank" className="btn-neon"><i className="fas fa-shopping-cart"></i></NavLink>
             </div>
         
                 
@@ -55,16 +58,16 @@ const Header = () => {
             <nav className="opcionesDePerfil">
                 <ul>
                     
-                        <li><a className="btn-neon" href="/users/perfil">Perfil</a></li>
+                        <li><NavLink className="btn-neon" to="/">Perfil</NavLink></li>
                         
-                            <li><a className="btn-neon" href="/admin/lista">Admin</a></li>
+                            <li><NavLink className="btn-neon" to="/Admin">Admin</NavLink></li>
                         
                         <form className="exit" action="/users/logout?_method=DELETE" method="post">
                         <button className="logout" type="submit">Cerrar Sesion</button> 
                         </form>
                     
-                        <li><a className="btn-neon" href="/users/login">Ingresar</a></li>
-                        <li><a className="btn-neon" href="/users/register">Registrarse</a></li> 
+                        <li><NavLink className="btn-neon" to="/Login">Ingresar</NavLink></li>
+                        <li><NavLink className="btn-neon" to="/Register">Registrarse</NavLink></li> 
                     
                     
                 </ul>
@@ -77,9 +80,9 @@ const Header = () => {
             
 
            
-            <li><a className="btn-neon" href="/productos/todos">To2 los productos</a></li>
-            <li><a className="btn-neon" href="/AboutUs">Somos SoudSurge</a></li>
-            <li><a className="btn-neon" href="/productos/loMasVendido">Lo + Vendido</a></li>
+            <li><NavLink className="btn-neon" to="/">To2 los productos</NavLink></li>
+            <li><NavLink className="btn-neon" to="/AboutUs">Somos SoudSurge</NavLink></li>
+            <li><NavLink className="btn-neon" to="/">Lo + Vendido</NavLink></li>
         </ul>
         
     </section>
