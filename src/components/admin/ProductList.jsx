@@ -28,9 +28,9 @@ function ProductList() {
             </a>
           </div>
           <div className="contenedor">
-        <a  className="direct-crear" href="crear">
+        <NavLink  className="direct-crear" to='/ProductCreate'>
             Crear Producto
-        </a>
+        </NavLink>
       </div>
       
         <NavLink  className="direct-crear" to='/Admin'>

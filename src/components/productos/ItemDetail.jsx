@@ -1,22 +1,20 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 
-
-function ItemDetail(id, descripcion, imagenes, titulo, precio, descuento, stock, marca) {
-const img = `url('/images/${imagenes}')`
+function ItemDetail(id, descripcion, /* imagenes, */ titulo, precio, descuento, stock, marca) {
+/* const img = `url('/images/${imagenes}')` */
   return (
     < section className="sectionDetail">
        
         <div className="vistas">
-            <ul>
+            {/* <ul>
                 <li className="caja-secundarias">
                     <img className="secundarias"  src={`/images/${img}`} alt="Imagen secundaria" onclick={`document.getElementById('imgMain').setAttribute('src','/images/${img}')`}/>
                 </li>
-            </ul>
+            </ul> */}
             <div className="detallado">
-                <i className="fas fa-percentage"> {descuento} </i>
-                <img className="principal"  id="imgMain" src={`/images/${img}`} alt="Imagen principal"/>
+                <i className="fas fa-percentage"> {descuento} </i>{/* 
+                <img className="principal"  id="imgMain" src={`/images/${img}`} alt="Imagen principal"/> */}
             </div>
         </div>
         <div className="detalle">
@@ -48,16 +46,7 @@ const img = `url('/images/${imagenes}')`
   )
 }
 
-itemDetail.propTypes = {
-    id,
-    descripcion,
-    imagenes,
-    titulo,
-    precio,
-    descuento,
-    stock,
-    marca
-}
+
 
 export default ItemDetail
 
