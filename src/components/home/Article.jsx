@@ -1,19 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { useSearchParams } from 'react-router-dom'
+import PropTypes from 'prop-types'/* 
+import { useParams } from 'react-router-dom' */
 
 import { NavLink } from 'react-router-dom'
 
 
-function Article({id, titulo, imagenes, precio}) {
-  const [Params, setParams] = useSearchParams()
-
+function Article({id,titulo, imagenes, precio}) {
+  /* const params = useParams() */
   const img = `url('/images/${imagenes}')`
   console.log(img)
 
       return (
         <article>
-            <NavLink to="/DetallesDeProducto/:id">
+            <NavLink to={`/DetallesDeProducto/${id}`}>
                 {/* <div > */}
                 <div className="producto" style={{ backgroundImage: img}}></div>
                 {/* <img src={`../assets/${imgProd}`} alt="" /> */}

@@ -33,7 +33,8 @@ function App() {/*
             {/* Login */}
             <Route path='/Login' element={<Login/>}/>
             {/* Detalle */}
-            <Route path='/DetallesDeProducto/:id' element={<DetallesDeProducto/>}/>
+            <Route path='/DetallesDeProducto/:productId'
+             element={<DetallesDeProducto/>}/>
             
             
             {/* Admin */}

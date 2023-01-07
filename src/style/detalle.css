@@ -1,11 +1,11 @@
-.detalle h2{
+.detalleDeProd h2{
     text-align: center;
 }
 
-.detalle .detalleDeProd{
+.detalleDeProd{
     background: linear-gradient(#6487e6, #ebe5ec);
  }
-.detalle .sin-stock{
+ .detalleDeProd .sin-stock{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     border-radius: 16px;
    background-color: white;
 }
-.detalle  .volver {
+.detalleDeProd .volver {
     
         text-decoration: none;
         color: white;
@@ -28,22 +28,20 @@
         margin-top: 40px;
     
 }
-.detalle .detalleDeProd{
+.detalleDeProd{
     background-repeat: repeat;
     background-size: 90px;
 
 }
-.detalle .sin-stock img{
+.detalleDeProd .sin-stock img{
     width: 20%;
 
 }
-.detalle::-webkit-scrollbar{
+
+.detalleDeProd .sectionDetail div.vistas ul{
     display: none;
 }
-.detalle main.detalleDeProd .sectionDetail div.vistas ul{
-    display: none;
-}
-.detalle main.detalleDeProd .sectionDetail .detallado {
+.detalleDeProd .sectionDetail .detallado {
     width: 80%;
     margin-left: 10%;
     display: flex;
@@ -52,7 +50,7 @@
 }
 
 
-.detalle main.detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
+.detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
     display: flex;
     height: 6%;
     width: 15%;
@@ -69,20 +67,20 @@
     bottom: 65%;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.vistas .detallado .principal{
+.detalleDeProd .sectionDetail div.vistas .detallado .principal{
     width: 90%;
     height: 220px;
     border:rgb(166 43 169) solid 4px;
     border-radius: 16px;
     margin-top: 10%;
 }
-.detalle main.detalleDeProd .sectionDetail div.vistas .detallado img.principal-movil{
+.detalleDeProd .sectionDetail div.vistas .detallado img.principal-movil{
     width: 100%;
     height: 450px;
     margin: 0 50px 0 50px;
 }
 
-.detalle main.detalleDeProd .sectionDetail .detalle{
+.detalleDeProd .sectionDetail .detalle{
     display: flex;
     flex-direction: column;
     color: rgb(0, 0, 0);
@@ -91,7 +89,7 @@
     align-items: center;
 }
 
-.detalle main.detalleDeProd .sectionDetail .detalle  .titulo,.marca{
+.detalleDeProd .sectionDetail  .titulo,.marca{
 color: black;
 background-color: aqua;
 border: rgb(7, 174, 252) solid 2px; 
@@ -100,10 +98,10 @@ width: 60%;
 padding: 5px;
 margin: 5px;
 }
-.detalle main.detalleDeProd .sectionDetail .detalle .precio{
+.detalleDeProd .sectionDetail .precio{
     width: 100%;
 }
-.detalle main.detalleDeProd .sectionDetail .detalle .precio-detalle{
+.detalleDeProd .sectionDetail .precio-detalle{
     color: black;
 background-color: aqua;
 border: rgb(7, 174, 252) solid 2px; 
@@ -114,7 +112,7 @@ margin: 5px;
 font-size: 22px;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.detalle .precio-descuento{
+.detalleDeProd .sectionDetail div.precio-descuento{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +121,7 @@ font-size: 22px;
     margin: 5px 0 10px 0;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.detalle div.precio-descuento .descuento{
+.detalleDeProd .sectionDetail divdiv.precio-descuento .descuento{
     text-decoration: line-through;
     margin-left: 5px;
     color: black;
@@ -134,7 +132,7 @@ font-size: 22px;
     padding: 3px;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.detalle .sumar-carrito{
+.detalleDeProd .sectionDetail div.sumar-carrito{
     width: 20%;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -143,7 +141,7 @@ font-size: 22px;
     justify-content: space-around;
     align-items: center;
 }
-.detalle main.detalleDeProd .sectionDetail div.detalle .sumar-carrito .increase, .decrease{
+.detalleDeProd .sectionDetail div.sumar-carrito .increase, .decrease{
     width: 25px;
     height: 25px;
     border: 2px black solid;
@@ -152,17 +150,17 @@ font-size: 22px;
     box-shadow: 4px 4px 8px rgba(212, 0, 255, 0.664);
     text-align: center;
 }
-.detalle main.detalleDeProd .sectionDetail div.detalle .sumar-carrito .contador{
+.detalleDeProd .sectionDetail div.sumar-carrito .contador{
     width: 30px;
     height: 25px;
     text-align: center;
 }
 
-.detalle main.detalleDeProd h1, h2, span{
+.detalleDeProd h1, h2, span{
     text-align: center;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.detalle .agregar{
+.detalleDeProd .sectionDetail div.agregar{
     width: 100%;
     margin-top: 20px;
     height: 75px;
@@ -172,7 +170,7 @@ font-size: 22px;
     align-items: center;
 }
 
-.detalle main.detalleDeProd .sectionDetail div.detalle .agregar  .a-carrito{
+.detalleDeProd .sectionDetail div.agregar  .a-carrito{
     width: 70%;
     height: 40px;
     background: blueviolet;
@@ -180,12 +178,12 @@ font-size: 22px;
     font-size: 22px;
     box-shadow: 4px 4px 8px rgba(212, 0, 255, 0.664) ;
 }
-.detalle .a-carrito a{
+.detalleDeProd .a-carrito a{
 color: white;
 }
 
 
-.detalle main.detalleDeProd .descripcion{
+.detalleDeProd .descripcion{
     width: 95%;
     text-align: center;
     color: white;
@@ -194,22 +192,22 @@ color: white;
     border: 2px solid rgb(7 139 252);
     padding: 3%;
 }
-.detalle main.detalleDeProd .caja-descripcion{
+.detalleDeProd .caja-descripcion{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.detalle main.detalleDeProd .caja-descripcion h2{
+.detalleDeProd .caja-descripcion h2{
     display: none;
 }
-.detalle main.detalleDeProd .similares{
+.detalleDeProd .similares{
     display: none;
     color: white;
     padding: 5px;
     width: 100%;
 }
 
-.detalle main.detalleDeProd .similares ul{
+.detalleDeProd .similares ul{
     display: flex;
     width: 98%;
     flex-direction: row;
@@ -217,22 +215,22 @@ color: white;
     flex-wrap: nowrap;
     overflow-y: auto;
 }
-.detalle main.detalleDeProd .similares ul article{
+.detalleDeProd .similares ul article{
     width: 100vw;
     height: 250px;
     margin-top: 50px;
 }
-.detalle main.detalleDeProd .similares ul::-webkit-scrollbar{
+.detalleDeProd .similares ul::-webkit-scrollbar{
     display: none;
 }
 
-.detalle main.detalleDeProd .similares ul article{
+.detalleDeProd .similares ul article{
     width: 25%;
     height: 200px;
     border: 2px solid black;
     border-radius: 10px;
 }
-.detalle main.detalleDeProd .similares article div.producto{
+.detalleDeProd .similares article div.producto{
     background-repeat: no-repeat;
     background-size: contain;
     height: 15vh;
@@ -240,18 +238,18 @@ color: white;
     padding: 1vw;
 }
 
-.detalle main.detalleDeProd .similares article p{
+.detalleDeProd .similares article p{
     color: black;
     text-align: center;
 
 }
 
-.detalle main.detalleDeProd .similares article h4{
+.detalleDeProd .similares article h4{
     color: black;
     text-align: center;
 }
 
-.detalle main.detalleDeProd .similares ul{
+.detalleDeProd .similares ul{
     
     height: 16rem;
     margin-left: 1vw;
@@ -264,7 +262,7 @@ color: white;
 
 @media (min-width: 461px) {
     
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
+    .detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
         display: flex;
         height: 9%;
         width: 12%;
@@ -281,7 +279,7 @@ color: white;
         bottom: 60%;
     }
     
-    .detalle main.detalleDeProd .caja-descripcion h2{
+    .detalleDeProd .caja-descripcion h2{
         display: block;
         color: white;
         background-color: black;
@@ -292,10 +290,10 @@ color: white;
         margin-top: 5px;
         font-size: 18px;
     }
-    .detalle main.detalleDeProd .similares{
+    .detalleDeProd .similares{
         display: block;
     }
-    .detalle main.detalleDeProd h2.similares{
+    .detalleDeProd h2.similares{
         display: block;
         background-color: rgb(245, 163, 176);
         color: white;
@@ -305,14 +303,14 @@ color: white;
         left: 0%;
         width: 100%;
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado .principal {
+    .detalleDeProd .sectionDetail div.vistas .detallado .principal {
         height: 294px;
     }
-    .detalle .detalleDeProd {
+    .detalleDeProd {
         background-repeat: repeat;
         background-size: 38px;
     }
-    .detalle main.detalleDeProd .similares article .tarjeta-detalle{
+    .detalleDeProd .similares article .tarjeta-detalle{
         text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -323,16 +321,16 @@ color: white;
     width: 90%;
     margin: 6%;
     }
-    .detalle main.detalleDeProd .similares article{
+    .detalleDeProd .similares article{
         background-color: #6487e68c;
     }
-    .detalle main.detalleDeProd .similares article .tarjeta-detalle .titulo-tarjeta{
+    .detalleDeProd .similares article .tarjeta-detalle .titulo-tarjeta{
         color: black;
     }
-    .detalle main.detalleDeProd .similares article .tarjeta-detalle .precio-tarjeta{
+    .detalleDeProd .similares article .tarjeta-detalle .precio-tarjeta{
         color: black;
     }
-    .detalle main.detalleDeProd .similares article div.producto{
+    .detalleDeProd .similares article div.producto{
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -342,7 +340,7 @@ color: white;
     }
 @media (min-width: 885px) {
 
-    .detalle main.detalleDeProd .caja-descripcion h2{
+    .detalleDeProd .caja-descripcion h2{
         display: block;
         color: white;
         background-color: black;
@@ -350,24 +348,24 @@ color: white;
         padding: 5px;
        margin-bottom: 0px;
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado .principal{
+    .detalleDeProd .sectionDetail div.vistas .detallado .principal{
         margin-top: 0px;
         margin-bottom: 15px;
        
     }
-    .detalle main.detalleDeProd .sectionDetail {
+    .detalleDeProd .sectionDetail {
         display: flex;
         width: 98vw;
         
        
     }
-    .detalle main.detalleDeProd .sectionDetail .detallado {
+    .detalleDeProd .sectionDetail .detallado {
         display: flex;
         width: 100%;
         overflow-y: hidden;
         height: 430px;
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas{
+    .detalleDeProd .sectionDetail div.vistas{
         display: flex;
         width: 52%;
         justify-content: center;
@@ -376,12 +374,12 @@ color: white;
         align-items: center;
         
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas ul .caja-secundarias{
+    .detalleDeProd .sectionDetail div.vistas ul .caja-secundarias{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
+    .detalleDeProd .sectionDetail div.vistas .detallado i.fas.fa-percentage {
         display: flex;
         height: 9%;
         width: 6%;
@@ -397,7 +395,7 @@ color: white;
         left: 10%;
         bottom: 50%;
     }
-    .detalle main.detalleDeProd .sectionDetail div.detalle {
+    .detalleDeProd .sectionDetail div{
         display: flex;
         flex-direction: column;
         width: 46%;
@@ -410,26 +408,26 @@ color: white;
         background-color: rgba(116, 116, 116, 0.329);
     }
 
-    .detalle main.detalleDeProd .sectionDetail div.vistas ul{
+    .detalleDeProd .sectionDetail div.vistas ul{
         display: flex;
        margin-left: 7%;
         
     }
 
-    .detalle main.detalleDeProd .sectionDetail div.vistas ul li{
+    .detalleDeProd .sectionDetail div.vistas ul li{
         list-style: none;
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado img.principal{
+    .detalleDeProd .sectionDetail div.vistas .detallado img.principal{
         width: 30vw;
         height: 400px;
         margin-top: 30px;
        
     }
-    .detalle main.detalleDeProd .sectionDetail div.vistas .detallado img.principal-movil{
+    .detalleDeProd .sectionDetail div.vistas .detallado img.principal-movil{
         display: none;
     }
 
-    .detalle main.detalleDeProd .sectionDetail div.vistas .secundarias{
+    .detalleDeProd .sectionDetail div.vistas .secundarias{
         width: 69px;
         height: 70px;
         margin: 5px;
@@ -437,19 +435,19 @@ color: white;
         border-radius: 10px;
     }
 
-    .detalle main.detalleDeProd h1, h2, span{
+    .detalleDeProd h1, h2, span{
         text-align: center;
     }
 
-    .detalle main.detalleDeProd .descripcion{
+    .detalleDeProd .descripcion{
         width: 98%;
         margin: 1%;
     }
-    .detalle main.detalleDeProd .similares ul article{
+    .detalleDeProd .similares ul article{
         width: 25%;
         height: 240px;
     }
-    .detalle main.detalleDeProd .similares article div.producto{
+    .detalleDeProd .similares article div.producto{
         background-repeat: no-repeat;
         background-position: center;
         height: 150px;
@@ -457,25 +455,25 @@ color: white;
         padding: 1vw;
     }
 
-    .detalle main.detalleDeProd .similares article p{
+    .detalleDeProd .similares article p{
         color: black;
         text-align: center;
 
     }
 
-    .detalle main.detalleDeProd .similares article h4{
+    .detalleDeProd .similares article h4{
         color: black;
         text-align: center;
     }
 
-    .detalle main.detalleDeProd h2.similares {
+    .detalleDeProd h2.similares {
         display: block;
         color: white;
         padding: 5px;
         left: 0%;
         width: 100%;
     }
-    .detalle main.detalleDeProd .similares ul{
+    .detalleDeProd .similares ul{
         width: 94vw;
         height: 20rem;
         margin-left: 3vw;
