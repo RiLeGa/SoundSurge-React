@@ -372,12 +372,13 @@ color: white;
         width: 100%;
         overflow-y: hidden;
         height: 430px;
+        margin-left: 4%;
     }
     .detalleDeProd .sectionDetail div.vistas{
         display: flex;
         width: 52%;
         justify-content: center;
-        height: 665px;
+        height: 595px;
         flex-direction: column-reverse;
         align-items: center;
         
@@ -400,8 +401,8 @@ color: white;
         border-radius: 50%;
         color: rgb(248 248 248);
         position: absolute;
-        left: 10%;
-        bottom: 50%;
+        left: 2%;
+        bottom: 49%;
     }
     .detalleDeProd .sectionDetail div{
         display: flex;
@@ -418,7 +419,6 @@ color: white;
 
     .detalleDeProd .sectionDetail div.vistas ul{
         display: flex;
-       margin-left: 7%;
         
     }
 
@@ -426,10 +426,9 @@ color: white;
         list-style: none;
     }
     .detalleDeProd .sectionDetail div.vistas .detallado img.principal{
-        width: 30vw;
-        height: 400px;
-        margin-top: 30px;
-       
+        width: 28vw;
+        height: 346px;
+        margin-top: 30px;   
     }
     .detalleDeProd .sectionDetail div.vistas .detallado img.principal-movil{
         display: none;

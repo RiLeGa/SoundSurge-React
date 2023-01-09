@@ -31,6 +31,7 @@ function PruebaProductos () {
           <TableRow>
             <TableCell align="center">Id</TableCell>
             <TableCell align="center">Nombre</TableCell>
+            <TableCell align="center">Imagen</TableCell>
             <TableCell align="center">Marca</TableCell>
             <TableCell align="center">Stock</TableCell>
             <TableCell align="center">Precio</TableCell>
@@ -45,13 +46,15 @@ function PruebaProductos () {
             >
                <TableCell align="center" component="th" scope="row"> {producto.id}  </TableCell>
               
-              <TableCell align="center">  {producto.titulo}</TableCell> 
+              <TableCell align="center">  {producto.titulo}</TableCell>
+
+              <TableCell align="center"><img className="imgList"  id="imgMain" src={`/images/${producto.imagenes[0].nombre}`} alt="Imagen principal"/> </TableCell> 
               
               <TableCell align="center">  {producto.marca.nombre}  </TableCell>
                 
               <TableCell align="center">   {producto.stock}  </TableCell>
               
-              <TableCell align="center">  {producto.precio} </TableCell> 
+              <TableCell align="center"> $ {producto.precio} </TableCell> 
               
             </TableRow>
         ))}

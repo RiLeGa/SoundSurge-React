@@ -56,12 +56,12 @@ const DetallesDeProducto = () => {
                 <p className="descuento">{Detalle.data.precio}</p>
             </div>
 
-            <div className="sumar-carrito">
-                <input /* value= {Detalle.data.stock} */  id="stockOculto" />
+           {/*  <div className="sumar-carrito">
+                <input value= {Detalle.data.stock}  id="stockOculto" />
                 <div className="decrease" id="decrease">-</div>
-                <input className="contador" type="number" id="contador" /* value="1" *//>
+                <input className="contador" type="number" id="contador" value="1"/>
                 <div className="increase" id="increase">+</div>
-            </div>
+            </div> */}
 
             <div className="agregar">
                 {/* <button className="a-carrito" type="submit" onClick={`addItem(${Detalle.data.id})`}><a href="/productos/carrito">Agregar al carrito</a></button> */}

@@ -1,4 +1,3 @@
-import React from 'react'
 import React, { useState, useEffect } from 'react'
 
 function AllProducts() {
@@ -30,29 +29,26 @@ function AllProducts() {
         <section class="busqueda">
                 <div class="filtrado">
                     <ul class="list-result">
-                      {/* <% productos.forEach(producto => { %> */}
+                       {Productos.data.map(producto => { 
                           <li class="producto-buscador">
-                              <a href="/productos/detalle/<%= producto.id %>">
-                                  <img class="imagen-filtrado" src="/images/<%= producto.imagenes[0].nombre %>" alt=""/>
-                                  <h4>
-                                  {/* <%-producto.titulo%> */}
-                                  </h4>
+                              <a href="/productos/detalle/<%= producto.id %>">{/* 
+                                  <img class="imagen-filtrado" src="/images/<%= producto.imagenes[0].nombre %>" alt=""/> */}
+                                  <h4>{producto.titulo}</h4>
                                   <div class="info-find">
-                                  {/* <%= producto.category.nombre%>
-                                  <%= producto.marca.nombre%>
-                                  <%= producto.descripcion%> */}
+                                  {producto.category.nombre}
+                                  {producto.marca.nombre}
+                                  {producto.descripcion}
                                   </div>
                                   <div class="agregar">
                                     <button class="a-favorito" type="submit">Agregar a favoritos</button>
-                                    {/* <% if (locals.userLogin) { %> */}
-                                      <button class="a-carrito" type="submit" onclick="addItem('<%= producto.id %>')"><a class="etiqueta-a" href="/productos/carrito">Agregar al carrito</a></button>
-                                    {/* <% }else{ %> */}
+                                    
                                         <button class="a-carrito" type="submit"><a href="#"> Agregar al carrito</a></button>
-                                    {/* <% } %> */}
+                                   
                                 </div>
                               </a>
                           </li> 
-                      {/* <% }) %> */}
+                                  })
+                                }
                     </ul>
                 </div>
         </section>

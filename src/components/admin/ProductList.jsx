@@ -20,28 +20,7 @@ function ProductList() {
   return (
     <main className="lista">
         <h1>Lista de productos</h1>
-        
-        <div  className="etiquetas">
-          <div className="contenedor">
-            <a  className="direct-stock" href="/admin/stock">
-                Productos sin stock
-            </a>
-          </div>
-          <div className="contenedor">
-        <NavLink  className="direct-crear" to='/ProductCreate'>
-            Crear Producto
-        </NavLink>
-      </div>
-      
-        <NavLink  className="direct-crear" to='/Admin'>
-          Admin
-      </NavLink>
-        <div className="contenedor">
-        <NavLink  className="direct-crear" to='/UserList'>
-          Lista de usuarios
-      </NavLink>
-    </div>
-    </div>
+    
     <section className="busqueda">
       <i className="fas fa-search" id="lupa"></i> <input type="text" name="search" id="inputSearch" placeholder="¿Que estas Buscando?"/>
     </section>

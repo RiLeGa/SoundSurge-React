@@ -8,6 +8,7 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import Register from "./components/user/Register";
 import DetallesDeProducto from "./components/productos/DetallesDeProducto";
 import Login from "./components/user/Login";
+import AllProducts from "./components/productos/AllProducts";
 
 import Admin from "./components/admin/Admin";
 import UserList from "./components/admin/UserList";
@@ -33,8 +34,9 @@ function App() {/*
             {/* Login */}
             <Route path='/Login' element={<Login/>}/>
             {/* Detalle */}
-            <Route path='/DetallesDeProducto/:productId'
-             element={<DetallesDeProducto/>}/>
+            <Route path='/DetallesDeProducto/:productId' element={<DetallesDeProducto/>}/>
+            {/* AllProducts */}
+            <Route path='/AllProducts' element={<AllProducts/>}/>
             
             
             {/* Admin */}
