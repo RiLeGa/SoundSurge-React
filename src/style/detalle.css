@@ -340,6 +340,14 @@ color: white;
     }
 @media (min-width: 885px) {
 
+
+    .detalleDeProd{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .detalleDeProd .caja-descripcion h2{
         display: block;
         color: white;

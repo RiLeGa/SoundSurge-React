@@ -1,12 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'/* 
-import { useParams } from 'react-router-dom' */
+import PropTypes from 'prop-types'
 
 import { NavLink } from 'react-router-dom'
 
 
 function Article({id,titulo, imagenes, precio}) {
-  /* const params = useParams() */
   const img = `url('/images/${imagenes}')`
   console.log(img)
 

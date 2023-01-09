@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 
-
-function DetallesDeProducto() {
-
+const DetallesDeProducto = () => {
+    
+    const [Detalle, setDetalle] = useState()
     const params = useParams()
 
     const url = `http://localhost:4000/api/productos/detalle/${params.productId}`
-    const [Detalle, setDetalle] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
         const responseJSON = await response.json()
@@ -19,7 +18,6 @@ function DetallesDeProducto() {
         fetchApi()
     })
 
-  
   return (
     
 
@@ -34,7 +32,10 @@ function DetallesDeProducto() {
         <div className="vistas">
             <ul>
                 <li className="caja-secundarias">
-                    <img className="secundarias"  src={`/images/${Detalle.data.imagenes[0].nombre}`} alt="Imagen secundaria" onClick={`document.getElementById('imgMain').setAttribute('src','/images/${Detalle.data.imagenes[0].nombre}')`}/>
+                    {Detalle.data.imagenes.map( img => {
+                    return(
+                    <img className="secundarias"  src={`/images/${img.nombre}`} alt="Imagen secundaria"/>
+                    )})}
                 </li>
             </ul>
             <div className="detallado">
@@ -56,9 +57,9 @@ function DetallesDeProducto() {
             </div>
 
             <div className="sumar-carrito">
-                <input value= {Detalle.data.stock}  id="stockOculto" />
+                <input /* value= {Detalle.data.stock} */  id="stockOculto" />
                 <div className="decrease" id="decrease">-</div>
-                <input className="contador" type="number" id="contador" value="1"/>
+                <input className="contador" type="number" id="contador" /* value="1" *//>
                 <div className="increase" id="increase">+</div>
             </div>
 

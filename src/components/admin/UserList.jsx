@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
 
 function UserList() {
-    const url = "http://localhost:4000/api/usuarios"
     const [Usuarios, setUsuarios] = useState()
+    
+    const url = "http://localhost:4000/api/usuarios"
     const fetchApi = async () => {
         const response = await fetch(url)
         const responseJSON = await response.json()
@@ -16,16 +16,6 @@ function UserList() {
   return (
     <main className="lista">
       <h1>Lista de usuarios</h1>
-      <div className="etiquetas">
-      <NavLink  className="direct-crear" to='/Admin'>
-          Admin
-      </NavLink>
-        <div className="contenedor">
-          <NavLink  className="direct-crear" to='/ProductList'>
-            Volver a la lista
-          </NavLink>
-        </div>
-  </div>
       <div className="table-responsive">
         <table className="table table-hover">
           <thead>
