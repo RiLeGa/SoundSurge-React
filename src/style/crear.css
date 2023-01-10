@@ -1,54 +1,179 @@
-.crear main h2{
+.crear  h2{
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 45px;
     text-align: center;
+    text-shadow: 2px 2px 7px #14d0ff;
+    color: #14d0ff;
+}
+
+.crear .input-invisible{
+    display: none;
+}
+.crear .img-crear{
+    width: 100%;
+    background-size: 15vw 20vh;
+    height: 160px;
+}
+.crear section label.mb-3 {
+    width: 80%;
+}
+.crear  section #descripcion2{
+    display: none;
+}
+.crear  .section-imagenes{
+    display: flex;
+   width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.crear .imagenes-secc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.crear  .section-imagenes #imagen,#imagen2,#imagen3,#imagen4{
+   display: none;
 }
 .crear{
     display: flex;
     flex-direction: column;
+    background: linear-gradient(black,blueviolet, black);
+    
+    
+}
+.crear .direct-lista{
+    display: none;
+}
+.crear .direct-lista-flecha{
+    color: white;
+    font-size: 25px;
+    margin-left: 3%;
+
+}
+.crear form{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+.crear form div{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .crear .imagenes-sec{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    width: 55%;
    
 }
 .crear .error{
     margin: 10px;
     color: white;
-    background-color: red;
-    width: 20%;
-   display: flex;
-   justify-content: center;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    text-shadow: 5px 3px 4px red;
 }
 .crear .secundarias{
-    width: 16%
+    width: 68%;
+    margin: 20px;
+    padding: 3%;
+    background-color: black;
+    box-shadow: 5px 5px 10px #dd55ff;
 }
-.crear main section{
-    margin-top: 50px;
+.crear .secundarias2{
+    height: 167px;
+    /* margin: 20px; */
+    /* padding: 3%; */
+    background-color: white;
+    box-shadow: 5px 5px 10px      #dd55ff;
+    ;
+    background-repeat: no-repeat;
+    width: 87%;
+    background-size: 51vw 19vh;
+    border: 1px solid black;
+    margin: 6%;
+}
+.crear .p-imagen{
+    color: white;
+    font-size: 15px;
+    text-shadow: 4px 3px 10px black
+}
+.crear .label-imagen{
+    width: 95%;
+}
+.crear  section {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .crear .direct-lista{
     width: 60vw;
     margin-left: 20vw;
 }
-.crear main section .mb-3{
+.crear  section .mb-3{
     display: flex;
    flex-direction: column;
    align-items: center;
-   margin-right: 20%;
+   background-color: black;
+   margin: 5px;
+   width: 103%;
+   border: 2px solid #14d0ff;
+   border-radius: 10px;
 }
-.crear main section .mb-3 label.form-label{
+.crear  section .mb-33 {
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    margin-left: 20vw;
-    margin-top: 25px;
-    text-align: left;
+    align-items: normal;
+    
+    margin: 5px;
+    width: 35%;
+   
+}
+.crear  section .mb-33 label.form-label {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    width: 100%;
+    font-size: 19px;
+    text-shadow: 2px 2px 7px #dd55ff;
+    color: #dd55ff;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    border: 1px solid #dd55ff;
+    box-shadow: 4px 2px 2px #dd55ff;
+}
+  
+
+.crear  section .mb-3 label.form-label{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    width: 70%;
     font-size: 25px;
+    text-shadow: 2px 2px 7px #14d0ff;
+    color: #14d0ff;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    box-shadow: 4px 2px 2px #14d0ff;
+    border: 1px solid #14d0ff;
 }
 
-.crear main section .mb-3 .invalid-feedback{
+.crear  section .mb-3 .invalid-feedback{
     display: flex;
     flex-direction: column;
     width: 60vw;
@@ -58,42 +183,612 @@
     color: red;
 }
 
-.crear main section .mb-3 input.form-control{
+.crear  section .mb-3 input.form-control{
     width: 60vw;
     height: 30px;
-    margin-left: 20vw;
+    text-align: center;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.crear  section .mb-3 select.form-select{
+    width: 60vw;
+    height: 30px;
+   text-align: center;
     border: 2px solid black;
 }
 
-.crear main section .mb-3 select.form-select{
-    width: 60vw;
-    height: 30px;
-    margin-left: 20vw;
-    border: 2px solid black;
-}
-
-.crear main section .botones{
+.crear  section .botones{
     width: 30vw;
-    margin-left: 35vw;
+    flex-direction: row;
     margin-top: 25px;
     display: flex;
     justify-content: space-around;
 }
+.crear section .botones .boton{
+    display: flex;
+   margin: 20%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.crear section .botones .boton .btn{
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 4px;
+    
+    z-index: 2;
+}
+.crear section .botones .boton .btn-primary::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255),white,rgb(4, 1, 187));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
 
-.crear main section .botones .btn.btn-primary{
-    background-color: rgb(74, 82, 74);
+.crear section .botones .boton .btn-primary:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+
+.crear section .botones .boton .btn-primary::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), white, rgb(4, 1, 187));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.crear section .botones .boton .btn-primary:hover::before{
+    background-position: 100%;
+}
+.crear  section .botones .btn.btn-primary{
+   
+    padding: 15px;
+    color:white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-shadow: 2px 1px 3px #000000ad;
+    border: 2px solid black;
+    margin-right: 25%;
+    
+}
+
+.crear section .botones .boton .btn-secundary::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg,  rgb(255, 30, 143), rgb(255, 15, 15),rgb(255, 15, 15),rgb(255, 30, 143));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.crear section .botones .boton .btn-secundary:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+
+.crear section .botones .boton .btn-secundary::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(255, 15, 15),rgb(255, 15, 15),rgb(255, 30, 143));
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.crear section .botones .boton .btn-secundary:hover::before{
+    background-position: 100%;
+}
+
+
+.crear  section .botones .btn.btn-secundary{
+   
     padding: 15px;
     color:black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+   
+    border: 2px solid black;
+    margin-right: 25%;
+    
+}
+.crear  section .botones .btn.btn-secundary{
+   
     border-radius: 15%;
     margin-bottom: 50px;
     
 }
+.crear  section #descripcion textarea {
+    width: 68%;
+    margin-top: 5px;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;}
 
-.crear main section .botones .btn.btn-secundary{
-    background-color: rgb(186, 3, 3);
-    padding: 15px;
-    color:black;
-    border-radius: 15%;
-    margin-bottom: 50px;
-    
+
+@media (min-width: 461px) {
+    .crear {
+        display: flex;
+        justify-content: center;
+    }
+    .crear  section .botones .btn.btn-primary{
+        margin-right: 0px;
+    }
+    .crear  section .botones .btn.btn.btn-secundary{
+        margin-right: 0px;
+    }
+    .crear .img-crear {
+        width: 110%;
+    }
+    .crear  h2 {
+        text-shadow: 3px 2px 35px #ffffff;
+        background-color: #000000d9;
+        color: #dd55ff;
+        height: 100px;
+        padding-top: 4%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .crear .direct-lista{
+        display: block;
+    }
+    .crear  section .mb-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #dd55ff;
+        padding: 3%;
+    }
+    .crear  section #descripcion{
+        height: 210px;
+        padding: 0%;
+        width: 145%;
+    }
+    .crear  section #descripcion textarea{
+        width: 68%;
+        margin-top: 5px;
+        padding: 4%;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #ffc9f3;
+    }
+    .crear  section .mb-3 input.form-control{
+        width: 60vw;
+        height: 30px;
+        background-color: #ffc9f3
+        
+
 }
+.crear  section .mb-3 select.form-select {
+  background-color: #f8d3f0 ;
+  width: 60vw;
+  height: 30px;
+}
+.crear .direct-lista{
+margin-top: 2%;
+width: 28%;
+margin-left: 4%;
+}
+.crear .direct-lista #boton{
+    padding: 3px;
+    background: black;
+    color: #14d0ff;
+    box-shadow: 2px 2px 4px #14d0ff;
+    }
+.crear .direct-lista-flecha{
+    display: none;
+}
+.crear  section .caja1,.caja2,.caja3 {
+width: 100%;
+
+}
+.crear  section .articulo1,.articulo2{
+    width: 130%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crear  section .articulo2{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+
+}
+.crear  .section-imagenes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+}
+.crear .imagenes-sec {
+    display: flex;
+    flex-direction:row ;
+}
+.crear .secundarias {
+    width: 51%;
+    margin: 5px;
+    padding: 3%;
+    background-color: black;
+    box-shadow: 5px 5px 10px #dd55ff;
+}
+.crear  section .mb-33 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+width: 100%;
+justify-content: space-between;
+}
+.crear  section .botones {
+    width: 100%;
+    /* margin-top: 25px; */
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000d9;
+    padding-right: 4%;
+    padding-left: 4%;
+   margin-bottom: 5%;
+    border-top: 2px solid #00c3d7;
+    border-bottom: 2px solid #00c3d7;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* box-shadow: 9px 6px 16px #d7971f; */
+}
+
+.crear section .botones .boton {
+    margin: 5px;
+}
+.crear section .botones .btn.btn-primary {
+    margin-bottom: 0px;
+}    
+.crear section .botones .btn.btn-secundary {
+    margin-bottom: 0px;
+}
+
+
+
+.crear  section .caja33 {
+    width: 70%;
+   
+}
+.crear .cajitas-imagenes{
+    margin: 2%;
+}
+.crear  section .mb-33 label.form-label {
+    width: 110%;
+}
+.crear .divisor-label{
+    display: flex;
+    flex-direction: row;
+}
+.crear .p-imagen {
+    color: white;
+    font-size: 15px;
+    text-shadow: 4px 3px 10px black;
+    /* width: 92%; */
+    text-align: center;
+}
+.crear .secundarias2 {
+    background-size: 27vw 19vh;
+    background-position-x: 30%;
+}
+
+}
+
+    @media (min-width: 791px){
+        
+        .crear  h2 {
+            text-shadow: 2px 2px 7px rgb(255, 85, 241);
+            background: #00000080;
+            width: 56%;
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            margin-left: 22%;
+            margin-bottom: 1%;
+            margin-top: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 11px #dd55ff;
+            height: 100%;
+        }
+        .crear section .botones .btn.btn-primary {
+            width: 80%;
+        }
+        .crear section .botones .btn.btn-secundary{
+            width: 80%;
+        }
+        .crear  section .mb-3 input.form-control {
+            width: 60vw;
+            height: 30px;
+            border: 3px solid black;
+            
+            border-radius: 5px;
+        }
+        .crear .direct-lista {
+            margin-top: 2%;
+        }
+        .crear  section .mb-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #00000096;
+            margin: 18px;
+            width: 134%;
+            border: 1px solid #14d0ff;
+            border-radius: 10px;
+        }
+        .crear form {
+            background-color: #000000bf;
+            
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        .crear  section .mb-3 label.form-label {
+            width: 100%;
+            border: 2px solid #dd55ff;
+            border-radius: 16px;
+            margin-top: 5px;
+        }
+        .crear  section .mb-3 select.form-select {
+            width: 15vw;
+            height: 38px;
+             border: 3px solid black;
+             margin-top: 8px;
+            border-radius: 5px;
+        }
+        .crear  section .mb-3 input.form-control {
+            width: 15vw;
+            height: 38px;
+            border: 3px solid black;
+            
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        .crear .error {
+            font-size: 86%;
+            width: 100%;
+            margin: 0px;
+        }
+        .crear .secundarias {
+            width: 40%;
+            margin: 10px;
+            padding: 1%;
+            background-color: black;
+            box-shadow: 5px 5px 10px  #dd55ff;
+            ;
+            
+        }
+        .crear  section .mb-33 {
+            width: 80%;
+        }
+        .crear  section .articulo1{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+          padding-left: 1.5%;
+        }
+        .crear section .articulo2 {
+            display: flex;
+            flex-direction: column;
+            width: 53%;
+            margin-left: 4%;
+            position: relative;
+        }
+       
+       
+        .crear  section .caja3{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            
+           
+        }
+        .crear .section-imagenes {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .crear  section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+        .crear  section .caja1{
+            margin-left: 6%;
+        margin-right: 16%;
+        }
+        .crear  section #descripcion textarea {
+            width: 78%;
+            margin-left: 1%;
+            width: 80%;
+            padding: 1%;
+        }
+        .crear  section #descripcion{
+           
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 10px;
+        border: 1px solid #14d0ff;
+        width: 60%;
+        height: 150px;
+        margin: 0;
+    
+        }
+      
+        .crear  section #descripcion label.form-label {
+            width: 90%;
+    }
+    .crear  .section-imagenes {
+      width: 100%;
+      margin-left: 0%;
+    }
+    .crear .imagenes-sec {
+        width:65%;
+    }
+    .crear .imagenes-secc {
+        width: 90%;
+       
+    }
+    .crear .cajita{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    .crear .divisor-label{
+        width: 100%;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    .crear .secundarias2 {
+        background-size: 15vw 20vh;
+        background-position-x: 30%;
+    }
+    .crear .secundarias2 {
+        height: 190px;
+    }
+    .crear  section .botones {
+       
+        width: 100%;
+    }
+    
+    .crear .p-imagen {
+        font-size: 13px;
+    }
+   
+    .crear  section #desaparecer{
+       display: block;
+       position: absolute;
+       bottom: -138%;
+       left: -134%;
+    }
+
+    .crear  section #descripcion2{
+        display: none;
+        width: 70%;
+        padding: 0%;
+        justify-content: center;
+    }
+    .crear .articulo22{
+        width: 100%;
+    }
+    .crear section .caja33 {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .crear section .caja33 .label-descripcion{
+        width: 80%;
+        border: 2px solid #dd55ff;
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        width: 70%;
+        font-size: 25px;
+        text-shadow: 2px 2px 7px #14d0ff;
+        color: #14d0ff;
+        background-color: black;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        box-shadow: 4px 2px 2px #14d0ff;
+      
+        border-radius: 16px;
+    }
+    .crear #descripcion22{
+        margin-top: 5px;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #ffc9f3;
+        width: 80%;
+        height: 100px;
+    margin-left: 10%;
+        
+    }
+    .crear section .botones {
+        padding: 2%;
+        margin-top: 200px;
+        
+    }
+    
+    .crear section label.mb-3 {
+        width: 35%;
+        margin: 1%;
+        
+    }
+    .crear .img-crear {
+        width: 120%;
+        margin-top: 3%;
+    }
+    .crear #imagenError {
+        font-size: 64%;
+    } 
+    .crear #imagenError2 {
+        font-size: 64%;
+    } 
+
+    .crear #imagenError3 {
+        font-size: 64%;
+    } 
+
+    .crear #imagenError4 {
+        font-size: 64%;
+    } 
+    .a {display: flex;
+    flex-wrap: wrap;}
+
+}
+
+@media (min-width: 1000px){
+    .crear #imagenError {
+        font-size: 84%;
+    } 
+    .crear #imagenError2 {
+        font-size: 84%;
+    } 
+
+    .crear #imagenError3 {
+        font-size: 84%;
+    } 
+
+    .crear #imagenError4 {
+        font-size: 84%;
+    } 
+
+
+}
+    

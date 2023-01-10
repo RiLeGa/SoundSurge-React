@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 function ProductList() {
 
     const url = "http://localhost:4000/api/productos"
@@ -21,11 +24,13 @@ function ProductList() {
     <main className="lista">
         <h1>Lista de productos</h1>
 
-        <button>
+        
           <NavLink to="crear/producto">
-            Crear un producto
+            <Stack spacing={2} direction="row">
+              <Button variant="contained">Crear un producto</Button>
+            </Stack>
           </NavLink>
-        </button>
+        
     
     <section className="busqueda">
       <i className="fas fa-search" id="lupa"></i> <input type="text" name="search" id="inputSearch" placeholder="¿Que estas Buscando?"/>
@@ -53,13 +58,13 @@ function ProductList() {
                  
                   <tr id="producto-buscador2" className="producto-buscador">
                       
-                        <th scope="row"><a href="/productos/detalle/ producto.id "> {producto.id}  </a></th>
-                        <td className="titulo-nombre"><a href="/productos/detalle/ producto.id "> {producto.titulo} </a></td>
-                        <td className="category"><a href="/productos/detalle/ producto.id "> {producto.category.nombre} </a></td>
-                        <td id="marca"><a href="/productos/detalle/ producto.id "> {producto.marca.nombre} </a></td>
-                        <td id="stock"><a href="/productos/detalle/ producto.id  "> {producto.stock} </a></td>
-                        <td><a href="/productos/detalle/ producto.id  "> {producto.precio} </a></td>
-                        <td className="desc"><a href="/productos/detalle/ producto.id  "> {producto.descuento} </a></td>
+                        <th scope="row"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.id}  </NavLink></th>
+                        <td className="titulo-nombre"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.titulo} </NavLink></td>
+                        <td className="category"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.category.nombre} </NavLink></td>
+                        <td id="marca"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.marca.nombre} </NavLink></td>
+                        <td id="stock"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.stock} </NavLink></td>
+                        <td><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.precio} </NavLink></td>
+                        <td className="desc"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.descuento} </NavLink></td>
                         <td>
                             <div className="edicion">
                                 <a href="/admin/editar/ producto.id">
@@ -77,13 +82,13 @@ function ProductList() {
 
                         <tr className="producto-buscador">
                       
-                          <th  scope="row"><a href="/productos/detalle/ producto.id "> {producto.id}  </a></th>
-                          <td   className="titulo-nombre"><a href="/productos/detalle/ producto.id "> {producto.titulo} </a></td>
-                          <td  className="category"><a href="/productos/detalle/ producto.id "> {producto.category.nombre} </a></td>
-                          <td id="marca"><a href="/productos/detalle/ producto.id "> {producto.marca.nombre} </a></td>
-                          <td ><a href="/productos/detalle/ producto.id  "> {producto.stock} </a></td>
-                          <td ><a href="/productos/detalle/ producto.id  "> {producto.precio} </a></td>
-                          <td  className="desc"><a href="/productos/detalle/ producto.id  "> {producto.descuento} </a></td>
+                          <th  scope="row"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.id}  </NavLink></th>
+                          <td   className="titulo-nombre"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.titulo} </NavLink></td>
+                          <td  className="category"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.category.nombre} </NavLink></td>
+                          <td id="marca"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.marca.nombre} </NavLink></td>
+                          <td ><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.stock} </NavLink></td>
+                          <td ><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.precio} </NavLink></td>
+                          <td  className="desc"><NavLink to={`/DetallesDeProducto/${producto.id}`}> {producto.descuento} </NavLink></td>
                           <td >
                               <div className="edicion">
                                   <a href="/admin/editar/ producto.id">

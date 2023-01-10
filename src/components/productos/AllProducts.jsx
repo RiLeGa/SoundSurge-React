@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { NavLink } from 'react-router-dom'
 
 function AllProducts() {
   
@@ -52,7 +53,7 @@ function AllProducts() {
                        Productos.data.map(producto => { 
                         return(
                           <li className="producto-buscador">
-                              <a href="/productos/detalle/<%= producto.id">
+                              <NavLink to={`/DetallesDeProducto/${producto.id}`}>
                                   <img className="imagen-filtrado"  id="imgMain" src={`/images/${producto.imagenes[0].nombre}`} alt="Imagen principal"/>
                                   <h4>{producto.titulo}</h4>
                   
@@ -62,7 +63,7 @@ function AllProducts() {
                                         <button className="a-carrito" type="submit"> Agregar al carrito</button>
                                    
                                 </div>
-                              </a>
+                              </NavLink>
                           </li> 
                                  )})}
                     </ul>

@@ -45,13 +45,15 @@ function App() {/*
             
             {/* Admin */}
             <Route path='/Admin' element={<Admin/>}/>
-            {/* Admin */}
+            {/* CrearProducto */}
             <Route path='/Admin/crear/producto' element={<CrearProducto/>}/>
             {/* UserList */}
             <Route path='/UserList' element={<UserList/>}/>
             {/* ProductList */}
             <Route path='/ProductList' element={<ProductList/>}/>
           </Routes>
+
+          {<CrearProducto/>? <Footer/> ===null : null}
         <Footer/>
       </BrowserRouter>
     </div>

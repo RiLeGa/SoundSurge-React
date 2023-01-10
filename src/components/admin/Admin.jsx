@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 import UserList from "./UserList";
 import ProductList from './ProductList';
 import PruebaProductos from './PruebaProductos';
-import CrearProducto from './CrearProducto';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

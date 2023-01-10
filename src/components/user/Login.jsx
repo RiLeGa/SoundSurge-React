@@ -48,9 +48,9 @@ function Login() {
                 <a className="fin-login"  href="/">Contacto</a>
             </div>
         </section>
-            <section className="video-promo">
+            {/* <section className="video-promo">
                 <video muted autoPlay loop><source src="/images/videos/Guitar-Center-Showtime-Commercial.mp4"/></video>
-            </section>
+            </section> */}
     </main>
   )
 }

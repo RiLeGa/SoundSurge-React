@@ -24,7 +24,7 @@ const DetallesDeProducto = () => {
       
     <main className="detalleDeProd">
 
-        {!Detalle  ? 'Cargando...' :    
+        {!Detalle ? "Cargando..." :    
         Detalle.data.stock > 0 ?
 
         < section className="sectionDetail">
