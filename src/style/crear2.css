@@ -1,0 +1,14 @@
+.form-create{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-create h2{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}

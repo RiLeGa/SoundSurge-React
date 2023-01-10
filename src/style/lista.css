@@ -479,4 +479,13 @@
     .lista .direct-stock {
         font-size: 20px;
     }
+    .lista .opcionesDeAdmin{
+        background-color: black;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .lista .opcionesDeAdmin button{
+        color: white;
+    }
 }

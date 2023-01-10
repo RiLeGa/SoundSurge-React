@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import UserList from "./UserList";
 import ProductList from './ProductList';
 import PruebaProductos from './PruebaProductos';
+import CrearProducto from './CrearProducto';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,7 +39,7 @@ TabPanel.propTypes = {
 
 function Admin() {
 
-  const [value, setValue] = React.useState('1');
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -49,7 +50,7 @@ function Admin() {
 
     <Box sx={{ width: '100%'}}>
       <Box>
-      <Tabs value={value} onChange={handleChange} centered>
+      <Tabs className='opcionesDeAdmin' value={value} onChange={handleChange} centered>
         <Tab label="Listado de ususarios" />
         <Tab label="Listado de productos" />
         <Tab label="Listado de productos 2" />

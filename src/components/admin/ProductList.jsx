@@ -20,6 +20,12 @@ function ProductList() {
   return (
     <main className="lista">
         <h1>Lista de productos</h1>
+
+        <button>
+          <NavLink to="crear/producto">
+            Crear un producto
+          </NavLink>
+        </button>
     
     <section className="busqueda">
       <i className="fas fa-search" id="lupa"></i> <input type="text" name="search" id="inputSearch" placeholder="¿Que estas Buscando?"/>

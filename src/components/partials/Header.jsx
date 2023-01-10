@@ -80,9 +80,9 @@ const Header = () => {
             
 
            
-            <li><NavLink className="btn-neon" to="/">To2 los productos</NavLink></li>
+            <li><NavLink className="btn-neon" to="/AllProducts">To2 los productos</NavLink></li>
             <li><NavLink className="btn-neon" to="/AboutUs">Somos SoudSurge</NavLink></li>
-            <li><NavLink className="btn-neon" to="/">Lo + Vendido</NavLink></li>
+            <li><NavLink className="btn-neon" to="/LoMasVendido">Lo + Vendido</NavLink></li>
         </ul>
         
     </section>

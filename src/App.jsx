@@ -9,12 +9,14 @@ import Register from "./components/user/Register";
 import DetallesDeProducto from "./components/productos/DetallesDeProducto";
 import Login from "./components/user/Login";
 import AllProducts from "./components/productos/AllProducts";
+import LoMasVendido from "./components/productos/LoMasVendido";
 
 import Admin from "./components/admin/Admin";
 import UserList from "./components/admin/UserList";
 import ProductList from "./components/admin/ProductList";
 
 import './style/estilos.css'
+import CrearProducto from "./components/admin/CrearProducto";
 
 
 function App() {/* 
@@ -37,10 +39,14 @@ function App() {/*
             <Route path='/DetallesDeProducto/:productId' element={<DetallesDeProducto/>}/>
             {/* AllProducts */}
             <Route path='/AllProducts' element={<AllProducts/>}/>
+            {/* LoMasVendido */}
+            <Route path='/LoMasVendido' element={<LoMasVendido/>}/>
             
             
             {/* Admin */}
             <Route path='/Admin' element={<Admin/>}/>
+            {/* Admin */}
+            <Route path='/Admin/crear/producto' element={<CrearProducto/>}/>
             {/* UserList */}
             <Route path='/UserList' element={<UserList/>}/>
             {/* ProductList */}
